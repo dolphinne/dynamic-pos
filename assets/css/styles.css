@@ -116,7 +116,7 @@ input[type=text]::placeholder {
 }
 
 .login-main_wrapper {
-  background: url(./assets/images/login-back.png) no-repeat center;
+  background: url(../images/login-back.png) no-repeat center;
   background-size: cover;
   height: 100vh;
   position: relative;
