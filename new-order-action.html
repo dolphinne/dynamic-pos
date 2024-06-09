@@ -20,13 +20,13 @@
   </head>
 
   <body>
-    <header class="site-header">
-      <button class="burger-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <ul class="header-menu d-md-flex">
+    <!-- <header class="site-header">
+      <a href="#"
+        ><img
+          class="brand_logo"
+          src="https://i0.wp.com/www.writefromscratch.com/wp-content/uploads/2018/12/demo-logo.png?fit=539%2C244&ssl=1&w=640"
+      /></a>
+      <ul class="header-menu">
         <li>
           <a href="" class="active">Special Order</a>
         </li>
@@ -38,6 +38,9 @@
         </li>
         <li>
           <a href="">Offline Orders</a>
+        </li>
+        <li class="d-md-none d-block">
+          <a href="">Create New</a>
         </li>
         <li>
           <a
@@ -56,431 +59,444 @@
           </ul>
         </li>
       </ul>
-      <button class="btn btn-secondary">Create New</button>
-    </header>
-    <div class="page_main-wrappper">
-      <div class="search_box">
-        <input
-          type="search"
-          name=""
-          id=""
-          placeholder="Search item"
-          class="form-control"
-        />
-      </div>
-      <div class="new-order_main">
-        <div class="left_categories">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link active"
-                id="cat-1-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#cat-1-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="cat-1-tab-pane"
-                aria-selected="true"
+      <button
+        class="btn btn-secondary ms-auto d-md-block d-none"
+        data-bs-toggle="modal"
+        data-bs-target="#createNewModel"
+      >
+        Create New
+      </button>
+      <button class="burger-menu ms-4">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header> -->
+    <div class="page_main-wrappper new_order">
+      <div class="new-order_main_wrapper">
+        <div class="new-order_main">
+          <div class="search_box">
+            <input
+              type="search"
+              name=""
+              id=""
+              placeholder="Search item"
+              class="form-control"
+            />
+          </div>
+          <div class="left_categories">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link active"
+                  id="cat-1-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cat-1-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="cat-1-tab-pane"
+                  aria-selected="true"
+                >
+                  Category 1
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="cat-2-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cat-2-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="cat-2-tab-pane"
+                  aria-selected="false"
+                >
+                  Category 2
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="category_items">
+            <div class="tab-content" id="myTabContent">
+              <div
+                class="tab-pane fade show active"
+                id="cat-1-tab-pane"
+                role="tabpanel"
+                aria-labelledby="cat-1-tab"
+                tabindex="0"
               >
-                Category 1
-              </button>
-            </li>
-            <li class="nav-item" role="presentation">
-              <button
-                class="nav-link"
-                id="cat-2-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#cat-2-tab-pane"
-                type="button"
-                role="tab"
-                aria-controls="cat-2-tab-pane"
-                aria-selected="false"
-              >
-                Category 2
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="category_items">
-          <div class="tab-content" id="myTabContent">
-            <div
-              class="tab-pane fade show active"
-              id="cat-1-tab-pane"
-              role="tabpanel"
-              aria-labelledby="cat-1-tab"
-              tabindex="0"
-            >
-              <div class="cat-items_wrapper">
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                <div class="cat-items_wrapper">
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
+                  </button>
+                </div>
               </div>
-            </div>
-            <div
-              class="tab-pane fade"
-              id="cat-2-tab-pane"
-              role="tabpanel"
-              aria-labelledby="cat-2-tab"
-              tabindex="0"
-            >
-              <div class="cat-items_wrapper">
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+              <div
+                class="tab-pane fade"
+                id="cat-2-tab-pane"
+                role="tabpanel"
+                aria-labelledby="cat-2-tab"
+                tabindex="0"
+              >
+                <div class="cat-items_wrapper">
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
+                  </button>
+                  <button class="cat-item-one-button">
+                    <div class="cat-item-one">
+                      <div class="img">
+                        <img src="./assets/images/food1.png" alt="" />
+                      </div>
+                      <div class="itm-dtl">
+                        <h4>Calamari Rings</h4>
+                        <p>Cheese mixed <span>Qty: 1 kg</span></p>
+                        <span class="price">₹ 160.00</span>
+                      </div>
                     </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
-                <button class="cat-item-one-button">
-                  <div class="cat-item-one">
-                    <div class="img">
-                      <img src="./assets/images/food1.png" alt="" />
-                    </div>
-                    <div class="itm-dtl">
-                      <h4>Calamari Rings</h4>
-                      <p>Cheese mixed <span>Qty: 1 kg</span></p>
-                      <span class="price">₹ 160.00</span>
-                    </div>
-                  </div>
-                </button>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -608,111 +624,119 @@
               tabindex="0"
             >
               <div class="checkout-form">
-                <div class="row">
-                  <div class="col-12 mt-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Customer Name"
-                    />
+                <div>
+                  <div class="row">
+                    <div class="col-12 mt-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Customer Name"
+                      />
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Contact Number"
+                      />
+                    </div>
+                    <div class="col-lg-6 mt-3">
+                      <input
+                        type="date"
+                        class="form-control"
+                        placeholder="Birth date"
+                      />
+                    </div>
+                    <div class="col-lg-12 mt-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="GST"
+                      />
+                    </div>
                   </div>
-                  <div class="col-lg-6 mt-3">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Contact Number"
-                    />
+                  <div class="order-type">
+                    <p class="mb-1">Order Type</p>
+                    <div class="inside_wrapper">
+                      <div class="radio">
+                        <input type="radio" name="order-type" id="" />
+                        <label>Dine In</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" name="order-type" id="" />
+                        <label>Pickup</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" name="order-type" id="" />
+                        <label>Delivery</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-lg-6 mt-3">
-                    <input
-                      type="date"
-                      class="form-control"
-                      placeholder="Birth date"
-                    />
+                  <div class="payment-mode">
+                    <p class="mb-1">Payment Mode</p>
+                    <div class="inside_wrapper">
+                      <div class="radio">
+                        <input type="radio" name="payment-mode" id="" />
+                        <label>Cash</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" name="payment-mode" id="" />
+                        <label>Online/UPI</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" name="payment-mode" id="" />
+                        <label>Split Tender</label>
+                      </div>
+                      <div class="radio">
+                        <input type="radio" name="payment-mode" id="" />
+                        <label>Debit/Credit Card</label>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-lg-12 mt-3">
-                    <input type="text" class="form-control" placeholder="GST" />
+                  <div class="row">
+                    <div class="col-sm-4 my-2 my-sm-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Other Charges"
+                      />
+                    </div>
+                    <div class="col-sm-4 my-2 my-sm-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Discount"
+                      />
+                    </div>
+                    <div class="col-sm-4 my-2 my-sm-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Tax %"
+                      />
+                    </div>
                   </div>
                 </div>
-                <div class="order-type">
-                  <p class="mb-1">Order Type</p>
-                  <div class="inside_wrapper">
-                    <div class="radio">
-                      <input type="radio" name="order-type" id="" />
-                      <label>Dine In</label>
+                <div>
+                  <div class="discount_final-total">
+                    <div>
+                      <small>Items (4)</small>
+                      <strong>₹ 960.00</strong>
                     </div>
-                    <div class="radio">
-                      <input type="radio" name="order-type" id="" />
-                      <label>Pickup</label>
+                    <div>
+                      <small>Tax (5%)</small>
+                      <strong>₹ 48.00</strong>
                     </div>
-                    <div class="radio">
-                      <input type="radio" name="order-type" id="" />
-                      <label>Delivery</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="payment-mode">
-                  <p class="mb-1">Payment Mode</p>
-                  <div class="inside_wrapper">
-                    <div class="radio">
-                      <input type="radio" name="payment-mode" id="" />
-                      <label>Cash</label>
-                    </div>
-                    <div class="radio">
-                      <input type="radio" name="payment-mode" id="" />
-                      <label>Online/UPI</label>
-                    </div>
-                    <div class="radio">
-                      <input type="radio" name="payment-mode" id="" />
-                      <label>Split Tender</label>
-                    </div>
-                    <div class="radio">
-                      <input type="radio" name="payment-mode" id="" />
-                      <label>Debit/Credit Card</label>
+                    <div class="total-final">
+                      <strong>Total</strong>
+                      <strong>₹ 1008.00</strong>
                     </div>
                   </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-4 my-2 my-sm-0">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Other Charges"
-                    />
+                  <div class="action-buttons">
+                    <button class="act-button orange_light">Unpaid</button>
+                    <button class="act-button blue_light">Voice Token</button>
+                    <button class="act-button purple">Print Invoice</button>
                   </div>
-                  <div class="col-sm-4 my-2 my-sm-0">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Discount"
-                    />
-                  </div>
-                  <div class="col-sm-4 my-2 my-sm-0">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Tax %"
-                    />
-                  </div>
-                </div>
-                <div class="discount_final-total">
-                  <div>
-                    <small>Items (4)</small>
-                    <strong>₹ 960.00</strong>
-                  </div>
-                  <div>
-                    <small>Tax (5%)</small>
-                    <strong>₹ 48.00</strong>
-                  </div>
-                  <div class="total-final">
-                    <strong>Total</strong>
-                    <strong>₹ 1008.00</strong>
-                  </div>
-                </div>
-                <div class="action-buttons">
-                  <button class="act-button orange_light">Unpaid</button>
-                  <button class="act-button blue_light">Voice Token</button>
-                  <button class="act-button purple">Print Invoice</button>
                 </div>
               </div>
             </div>
